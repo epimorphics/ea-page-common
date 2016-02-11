@@ -7,11 +7,11 @@ Other common elements may be added in future.
 
 ## Assets provided
 
-* `sass/_ea-brand.scss` <br />
-  Common brand elements as re-usable SASS variables, including colour palette.
-* `sass/_page-top-bar.scss` <br />
-  Styling for a common page top bar, including logo as SVG (with PNG fallback for older browsers), proposition title and menu
-* `html/page-top-bar.hbs` <br />
-  Example markup for page top bar as a Handlebars template (actually very close to HTML)
-* `images`<br />
-  Contains common brand images as `.svg` and `.png`
+* `sass/_ea-brand.scss`
+Common brand elements as re-usable SASS variables, including colour palette.
+* `sass/_page-top-bar.scss`
+Styling for a common page top bar, including logo as SVG (with PNG fallback for older browsers), proposition title and menu
+* `html/page-top-bar.hbs`
+Example markup for page top bar as a Handlebars template (actually very close to HTML)
+* `images`
+Contains common brand images as `.svg` and `.png`
