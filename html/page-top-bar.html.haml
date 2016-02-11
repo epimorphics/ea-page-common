@@ -9,7 +9,7 @@
             %span.icon-bar
             %span.icon-bar
           %a.navbar-brand{:alt => "Environment Agency", :href => "https://www.gov.uk/government/organisations/environment-agency"}
-            %img.o-navbar-ea-brand--img{:alt => "Environment Agency - logo", :src => "/bwq/profiles/images/logo/banner_logo-en.png", :srcset => "/bwq/profiles/images/logo/ea-logo-master-dark-plain.svg"}/
+            %img.o-navbar-ea-brand--img{:alt => "Environment Agency logo", :src => image_path( "logo/ea-logo-en-dark.png" ), :srcset => image_path( "logo/ea-logo-master-dark-plain.svg" )}/
       .col-sm-9
         .row
           .col-sm-12
@@ -20,14 +20,14 @@
             #navbar-ea-menu.collapse.navbar-collapse
               %ul.nav.navbar-nav.navbar-left.u-full-width.u-margin-0-horiz
                 %li{:class => ("active" if current_page?(root_path)}
-                  %a{:href => "index.html"} Find
-                %li{:class => ("active" if current_page?(root_path)}
+                  = link_to( "Find", root_path )
+                %li{:class => ("active" if current_page?("data/index.html")}
                   %a{:href => "data/index.html"} Get the data
-                %li{:class => ("active" if current_page?(root_path)}
+                %li{:class => ("active"}
                   %a{:href => "help.html#glossary"} Glossary
-                %li{:class => ("active" if current_page?(root_path)}
+                %li{:class => ("active" if current_page?("help.html")}
                   %a{:href => "help.html"} Help
-        %li.pull-right.s-rightmost
-          %a{:href => "http://environment.data.gov.uk/"} EA open datasets
-        %li.pull-right
-          %a{:href => "/bwq/widgets"} Web widgets
+                %li.pull-right.s-rightmost
+                  %a{:href => "http://environment.data.gov.uk/"} EA open datasets
+                %li.pull-right
+                  %a{:href => "/bwq/widgets"} Web widgets
