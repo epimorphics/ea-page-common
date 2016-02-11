@@ -13,8 +13,15 @@ Other common elements may be added in future.
 * `sass/_page-top-bar.scss`
   Styling for a common page top bar, including logo as SVG (with PNG fallback for older browsers), proposition title and menu
 
+* `sass/_page-footer.scss`
+  Styling for a common page footer, including support links and linked data
+  logo.
+
 * `html/page-top-bar.hbs`
   Example markup for page top bar as a Handlebars template (actually very close to HTML)
 
+* `html/page-footer.hbs`
+  Example markup for page footer as a Handlebars template (actually very close to HTML)
+
 * `images`
-  Contains common brand images as `.svg` and `.png`
+  Contains common brand images as `.svg` and `.png` files
