@@ -1,0 +1,27 @@
+%footer.o-footer
+  .container
+    .row
+      .col-sm-6
+        %div
+          .c-footer-credits
+            %h4 Support
+            %p
+              To contact the Environment Agency, please use
+              %a.indicator.i18n{:href => "https://www.gov.uk/government/organisations/environment-agency#org-contacts"} our contacts page.
+            %p
+              If you notice a problem with the data provided by this site, please
+              = succeed "." do
+                %a{:href => "mailto:data.info@environment-agency.gov.uk"} send us an email
+      .col-sm-6
+        %h4 About this page
+        %p.c-footer-license
+          %a{:href => "http://data.gov.uk/linked-data"}
+            %img.c-linked-data-logo{:alt => "powered by linked data", :src => "images/logo/linked-data-logo-white.png", :srcset => "images/logo/linked-data-logo-white.svg"}/
+        %p
+          All content is available under the
+          = succeed "." do
+            %a{:href => "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/", :rel => "license"} Open Government Licence v3.0
+        %p.c-footer-epimorphics
+          %span.i18n Design and development by
+          = succeed "." do
+            %a{:href => "http://www.epimorphics.com"} Epimorphics

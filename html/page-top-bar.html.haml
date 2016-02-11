@@ -1,0 +1,33 @@
+%nav.navbar.o-navbar-ea.navbar-static-top{:role => "navigation"}
+  .container
+    .row
+      .col-sm-3
+        .navbar-header
+          %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#navbar-ea-menu", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:alt => "Environment Agency", :href => "https://www.gov.uk/government/organisations/environment-agency"}
+            %img.o-navbar-ea-brand--img{:alt => "Environment Agency - logo", :src => "/bwq/profiles/images/logo/banner_logo-en.png", :srcset => "/bwq/profiles/images/logo/ea-logo-master-dark-plain.svg"}/
+      .col-sm-9
+        .row
+          .col-sm-12
+            .c-proposition-name
+              %a.c-proposition-name{:href => "#"} Bathing Water Quality
+        .row
+          .col-sm-12
+            #navbar-ea-menu.collapse.navbar-collapse
+              %ul.nav.navbar-nav.navbar-left.u-full-width.u-margin-0-horiz
+                %li{:class => ("active" if current_page?(root_path)}
+                  %a{:href => "index.html"} Find
+                %li{:class => ("active" if current_page?(root_path)}
+                  %a{:href => "data/index.html"} Get the data
+                %li{:class => ("active" if current_page?(root_path)}
+                  %a{:href => "help.html#glossary"} Glossary
+                %li{:class => ("active" if current_page?(root_path)}
+                  %a{:href => "help.html"} Help
+        %li.pull-right.s-rightmost
+          %a{:href => "http://environment.data.gov.uk/"} EA open datasets
+        %li.pull-right
+          %a{:href => "/bwq/widgets"} Web widgets
