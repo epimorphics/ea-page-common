@@ -25,3 +25,11 @@ Other common elements may be added in future.
 
 * `images`
   Contains common brand images as `.svg` and `.png` files
+
+## Generating the stylesheets
+
+In a Sass-based project, the `.scss` files can be imported as-is. For projects
+using plain CSS, use `css/ea-common.css`. This file is auto-generated from the Sass sources, but requires Bootstrap to be installed via bower first:
+
+    bower install
+    sass -I bower_components sass/ea-common.scss > css/ea-common.css
