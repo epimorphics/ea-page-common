@@ -45,3 +45,5 @@ using plain CSS, use `css/ea-common.css`. This file is auto-generated from the S
 
     bower install
     sass -I bower_components sass/ea-common.scss > css/ea-common.css
+
+*Note*: if using the pre-generated `ea-common.css`, be aware that it has already imported all of the Bootstrap styles, so there is no need to import Bootstrap separately.
