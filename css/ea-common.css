@@ -5953,6 +5953,27 @@ button.close {
 .navbar-toggle .icon-bar {
   background-color: #f0f0f0; }
 
+.o-service-phase {
+  width: 100%;
+  border-bottom: 1px solid #bfc1c3;
+  padding: 8px 0 8px 0;
+  margin-top: 0;
+  margin-bottom: 1em; }
+
+.c-service-phase-badge, .c-service-phase-alpha-badge, .c-service-phase-beta-badge {
+  text-transform: uppercase;
+  padding: 4px;
+  color: white;
+  font-size: 90%;
+  font-weight: bold;
+  margin-right: 1em; }
+
+.c-service-phase-alpha-badge {
+  background-color: #d53880; }
+
+.c-service-phase-beta-badge {
+  background-color: #f47738; }
+
 footer {
   background-color: #bfc1c3;
   color: #202222;
