@@ -20,6 +20,9 @@ Other common elements may be added in future.
 * `sass/_service-phase.scss`
   Syling for the alpha- or beta- phase banner
 
+* `css/ea-common.css`
+  Plain CSS file for use in non-Sass projects. See note below about Bootstrap.
+
 * `html/page-top-bar.hbs`
   Example markup for page top bar as a Handlebars template
 
