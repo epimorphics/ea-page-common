@@ -1,0 +1,17 @@
+{
+  "name": "ea-common",
+  "authors": [
+    "Epimorphics Ltd"
+  ],
+  "description": "Common assets for EA branded sites",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6"
+  }
+}
