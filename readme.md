@@ -17,11 +17,23 @@ Other common elements may be added in future.
   Styling for a common page footer, including support links and linked data
   logo.
 
-* `html/page-top-bar.hbs`
-  Example markup for page top bar as a Handlebars template (actually very close to HTML)
+* `sass/_service-phase.scss`
+  Syling for the alpha- or beta- phase banner
 
-* `html/page-footer.hbs`
-  Example markup for page footer as a Handlebars template (actually very close to HTML)
+* `html/page-top-bar.hbs`
+  Example markup for page top bar as a Handlebars template
+
+* `html/page-top-bar.html`
+  Plain HTML example of page top bar markup
+
+* `html/page-footer.html`
+  Plain HTML example markup for page footer
+
+* `html/service-phase.html`
+  Example plain HTML markup for the service phase
+
+* `html/*.html.haml`
+  Example markup suitable for a Rails environment
 
 * `images`
   Contains common brand images as `.svg` and `.png` files
