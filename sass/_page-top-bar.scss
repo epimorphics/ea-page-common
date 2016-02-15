@@ -29,17 +29,17 @@
     margin-right: 0;
   }
 
-  a, li a {
+  a, li a, .c-navbar-menu-item {
     line-height: normal !important;
   }
 
-  a {
+  a, .c-navbar-menu-item {
     font-size: 110%;
     padding: 5px 0 0 !important;
     font-weight: bold;
   }
 
-  a, a:focus, a:hover, li a:focus, li a:hover {
+  a, a:focus, a:hover, li a:focus, li a:hover, .c-navbar-menu-item {
     background-color: $top-bar-bg-colour !important;
     color: $top-bar-link-colour;
   }
@@ -50,7 +50,7 @@
     margin-bottom: -3px;
   }
 
-  li.active a {
+  li.active a, li.active .c-navbar-menu-item {
     color: $top-bar-link-active-colour;
     border-bottom: 3px solid $top-bar-link-active-underline-colour;
     margin-bottom: -3px;
