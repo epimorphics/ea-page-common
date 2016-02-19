@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/** Override some of the default Bootstrap settings */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1207,13 +1208,13 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 36px; }
-
-h2, .h2 {
   font-size: 30px; }
 
+h2, .h2 {
+  font-size: 26px; }
+
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 21px; }
 
 h4, .h4 {
   font-size: 18px; }
@@ -5891,20 +5892,20 @@ button.close {
     margin-right: 18px; }
   .o-navbar-ea li.pull-right.s-rightmost {
     margin-right: 0; }
-  .o-navbar-ea a, .o-navbar-ea li a {
+  .o-navbar-ea a, .o-navbar-ea li a, .o-navbar-ea .c-navbar-menu-item {
     line-height: normal !important; }
-  .o-navbar-ea a {
+  .o-navbar-ea a, .o-navbar-ea .c-navbar-menu-item {
     font-size: 110%;
     padding: 5px 0 0 !important;
     font-weight: bold; }
-  .o-navbar-ea a, .o-navbar-ea a:focus, .o-navbar-ea a:hover, .o-navbar-ea li a:focus, .o-navbar-ea li a:hover {
+  .o-navbar-ea a, .o-navbar-ea a:focus, .o-navbar-ea a:hover, .o-navbar-ea li a:focus, .o-navbar-ea li a:hover, .o-navbar-ea .c-navbar-menu-item {
     background-color: #0b0c0c !important;
     color: #fff; }
   .o-navbar-ea a:hover {
     text-decoration: none;
     border-bottom: 3px solid #fff;
     margin-bottom: -3px; }
-  .o-navbar-ea li.active a {
+  .o-navbar-ea li.active a, .o-navbar-ea li.active .c-navbar-menu-item {
     color: #fff;
     border-bottom: 3px solid #6e942c;
     margin-bottom: -3px; }
