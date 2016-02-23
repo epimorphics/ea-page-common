@@ -5992,3 +5992,8 @@ footer {
 
 .supplementary-footer p {
   padding-top: 40px; }
+
+.action-button {
+  color: white;
+  background-color: #00823b;
+  border-radius: 0; }
