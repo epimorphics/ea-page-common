@@ -13,6 +13,10 @@ $font-size-h4:            ceil(($font-size-base * 1.25)) !default;
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default;
 
+// where glyphicons lives
+
+$icon-font-path: "../fonts/" !default;
+
 // by default no border radius
 
 $border-radius-base:        0 !default;
