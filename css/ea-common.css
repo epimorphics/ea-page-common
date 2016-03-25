@@ -1511,24 +1511,24 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container {
+.container, #global-cookie-message p {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, .container:after {
+  .container:before, #global-cookie-message p:before, .container:after, #global-cookie-message p:after {
     content: " ";
     display: table; }
-  .container:after {
+  .container:after, #global-cookie-message p:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container {
+    .container, #global-cookie-message p {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container {
+    .container, #global-cookie-message p {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container {
+    .container, #global-cookie-message p {
       width: 1170px; } }
 
 .container-fluid {
@@ -3741,15 +3741,17 @@ tbody.collapse.in {
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header,
+.container > .navbar-header, #global-cookie-message p > .navbar-header,
 .container > .navbar-collapse,
+#global-cookie-message p > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header,
+    .container > .navbar-header, #global-cookie-message p > .navbar-header,
     .container > .navbar-collapse,
+    #global-cookie-message p > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -3793,7 +3795,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    .navbar > .container .navbar-brand, #global-cookie-message .navbar > p .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
 .navbar-toggle {
@@ -4309,17 +4311,17 @@ a.badge:hover, a.badge:focus {
     font-weight: 200; }
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
-  .container .jumbotron, .container-fluid .jumbotron {
+  .container .jumbotron, #global-cookie-message p .jumbotron, .container-fluid .jumbotron {
     border-radius: 0;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container {
+  .jumbotron .container, .jumbotron #global-cookie-message p, #global-cookie-message .jumbotron p {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron, .container-fluid .jumbotron {
+      .container .jumbotron, #global-cookie-message p .jumbotron, .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
       .jumbotron h1,
@@ -5885,7 +5887,7 @@ button.close {
 .o-navbar-ea {
   background-color: #0b0c0c;
   margin-bottom: 0 !important; }
-  .o-navbar-ea .container {
+  .o-navbar-ea .container, .o-navbar-ea #global-cookie-message p, #global-cookie-message .o-navbar-ea p {
     margin-bottom: 0.75em; }
   .o-navbar-ea li {
     padding: 0;
@@ -5997,3 +5999,16 @@ footer {
   color: white;
   background-color: #00823b;
   border-radius: 0; }
+
+.js #global-cookie-message {
+  display: none;
+  /* shown with JS, always on for non-JS */ }
+
+#global-cookie-message {
+  width: 100%;
+  background-color: #d5e8f3;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  #global-cookie-message p {
+    margin-top: 0;
+    margin-bottom: 0; }
