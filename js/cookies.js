@@ -63,6 +63,17 @@
     }
   };
 
+  /** Necessary in case Modernizr is not present */
+  var addJavaScriptAvailable = function() {
+    var root = document.documentElement;
+    var cls = root.className;
+    root.className = cls ? (cls + " js") : "js";
+  };
+
   // show the cookie message when the document is ready
-  document.addEventListener("DOMContentLoaded", addCookieMessage );
+  document.addEventListener("DOMContentLoaded", function() {
+    addJavaScriptAvailable();
+    addCookieMessage();
+  } );
+
 }).call(window);
