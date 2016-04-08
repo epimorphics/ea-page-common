@@ -71,9 +71,17 @@
   };
 
   // show the cookie message when the document is ready
-  document.addEventListener("DOMContentLoaded", function() {
-    addJavaScriptAvailable();
-    addCookieMessage();
-  } );
+  if (document.addEventListener) {
+    document.addEventListener("DOMContentLoaded", function() {
+      addJavaScriptAvailable();
+      addCookieMessage();
+    } );
+  } else {
+    /* IE 8 doesn't have addEventListener */
+    document.attachEvent("DOMContentLoaded", function() {
+      addJavaScriptAvailable();
+      addCookieMessage();
+    } );
+  }
 
 }).call(window);
