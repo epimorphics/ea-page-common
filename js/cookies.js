@@ -82,6 +82,6 @@
       addJavaScriptAvailable();
       addCookieMessage();
     } );
-  }
+  };
 
 }).call(window);
