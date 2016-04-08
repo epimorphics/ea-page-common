@@ -72,13 +72,8 @@
 
   // show the cookie message when the document is ready
   if (document.addEventListener) {
-    document.addEventListener("DOMContentLoaded", function() {
-      addJavaScriptAvailable();
-      addCookieMessage();
-    } );
-  } else {
     /* IE 8 doesn't have addEventListener */
-    document.attachEvent("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
       addJavaScriptAvailable();
       addCookieMessage();
     } );
