@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /** Override some of the default Bootstrap settings */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1090,7 +1090,6 @@ a {
     color: #23527c;
     text-decoration: underline; }
   a:focus {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
 
@@ -2429,7 +2428,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -2892,7 +2890,6 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   .btn:hover, .btn:focus, .btn.focus {
@@ -5875,13 +5872,13 @@ button.close {
 .o-top-colour-bar {
   width: 100%;
   height: 10px;
-  background-color: #6e942c;
+  background-color: #00A95C;
   margin-bottom: 0; }
 
 .o-top-colour-bar--no-phase {
   width: 100%;
   height: 10px;
-  background-color: #6e942c;
+  background-color: #00A95C;
   margin-bottom: 2em; }
 
 .o-navbar-ea {
@@ -5909,7 +5906,7 @@ button.close {
     margin-bottom: -3px; }
   .o-navbar-ea li.active a, .o-navbar-ea li.active .c-navbar-menu-item {
     color: #fff;
-    border-bottom: 3px solid #6e942c;
+    border-bottom: 3px solid #00A95C;
     margin-bottom: -3px; }
   .o-navbar-ea li.active a:hover {
     border-bottom-color: #fff; }
@@ -5981,7 +5978,7 @@ footer {
   background-color: #bfc1c3;
   color: #202222;
   padding: 20px 10px 10px;
-  border-top: 15px solid #6e942c; }
+  border-top: 15px solid #00A95C; }
   footer a, footer a:hover {
     color: #fff;
     text-decoration: underline; }
